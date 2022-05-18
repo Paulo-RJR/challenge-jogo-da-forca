@@ -1,0 +1,75 @@
+body{
+    background: #F3F5FC;    
+}
+
+.letra-a{
+    position: absolute;
+    margin-top: 40px;
+    margin-left: 84px;
+}
+
+.botao{
+    display: none;   
+}
+
+.bt-comecar, .bt-adicionar{
+    position: absolute;    
+    width: 317px;
+    height: 105px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;    
+    font-weight: 400;   
+    border-radius: 24px;
+    border-color: #0A3871;
+    margin-left: 562px;
+    cursor: pointer;
+
+}
+
+.bt-comecar{ 
+    background: #0A3871;  
+    color: #FFFFFF;
+    margin-top: 394px;     
+}
+
+.bt-adicionar{ 
+    background: #F3F5FC;   
+    color: #0A3871;
+    margin-top: 541px;
+}
+
+.botao-2{
+    display: none;  
+}
+
+.bt-novo, .bt-cancelar{
+    display: inline-block;       
+    width: 269px;
+    height: 57px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;   
+    font-size: 16px;    
+    border-radius: 24px;
+    border-color: #0A3871;
+    cursor: pointer;
+    
+}
+
+.bt-novo{ 
+    background: #0A3871;  
+    color: #FFFFFF;
+    margin-top: 394px;     
+    margin-left: 562px;
+}
+
+.bt-cancelar{ 
+    background: #F3F5FC;   
+    color: #0A3871;
+    margin-top: 541px;
+    margin-left: 24px;
+}
+
