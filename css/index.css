@@ -8,8 +8,10 @@ body{
     margin-left: 84px;
 }
 
-.botao{
-    display: none;   
+/* Botões - Tela Inicial. */
+.botao-principal{
+    display: none;  
+    
 }
 
 .bt-comecar, .bt-adicionar{
@@ -23,53 +25,88 @@ body{
     font-weight: 400;   
     border-radius: 24px;
     border-color: #0A3871;
-    margin-left: 562px;
+    margin-left: 40%;
     cursor: pointer;
-
+    
 }
 
 .bt-comecar{ 
     background: #0A3871;  
     color: #FFFFFF;
-    margin-top: 394px;     
+    margin-top: 18%;  
 }
 
 .bt-adicionar{ 
     background: #F3F5FC;   
-    color: #0A3871;
-    margin-top: 541px;
+    color: #0A3871;    
+    margin-top: 26%;
 }
 
-.botao-2{
-    display: none;  
+
+/* Botões - Tela do Jogo. */
+.botao-jogo{
+    /*display: none; */ 
 }
 
-.bt-novo, .bt-cancelar{
+.simbolo{
+    
+    margin-left: 30%; 
+    margin-bottom: 56px;    
+}
+
+.dica{
+    display: inline-block;
+    position: absolute;
+    color: #495057;    
+    opacity: 0.8;
+    font-family: 'Inter', sans-serif;
+    font-weight: 700;
+    font-size: 0.8em; 
+    margin-left: 0.3%;   
+    margin-top: 566px;   
+}
+
+.bt-salvar, .bt-cancelar{
     display: inline-block;       
-    width: 269px;
-    height: 57px;
+    width: 332px;
+    height: 67px;
     align-items: center;
     text-align: center;
     font-family: 'Inter', sans-serif;
     font-weight: 400;   
     font-size: 16px;    
+    margin-top: 35%;
     border-radius: 24px;
     border-color: #0A3871;
     cursor: pointer;
     
 }
 
-.bt-novo{ 
+.bt-salvar{ 
     background: #0A3871;  
-    color: #FFFFFF;
-    margin-top: 394px;     
-    margin-left: 562px;
+    color: #FFFFFF;   
+    margin-left: -1.3%;
 }
 
 .bt-cancelar{ 
     background: #F3F5FC;   
     color: #0A3871;
-    margin-top: 541px;
     margin-left: 24px;
+    
+}
+
+/* Rodapé. */
+footer{    
+    text-align: center;   
+    padding: 20px 0;    
+}
+
+.copyright{  
+    font-family: 'Lobster', serif; 
+    font-weight: 400;    
+    position: relative;
+    color: #0A3871;
+    font-size: 0.8em;
+    margin: 5% 0;
 }
 
