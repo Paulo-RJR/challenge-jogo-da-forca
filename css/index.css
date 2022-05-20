@@ -1,5 +1,14 @@
 body{
-    background: #F3F5FC;    
+    position: relative;
+    width: 1440px;
+    height: 1024px;
+    background: #F3F5FC;        
+}
+
+/* Cabeçalho e Rodapé (Extra). */
+#cabeca, #rodape{
+    width: 100%;
+    height: 10%;
 }
 
 .letra-a{
@@ -8,7 +17,13 @@ body{
     margin-left: 84px;
 }
 
-/* Botões - Tela Inicial. */
+/* Main.*/
+#corpo{
+    width: 100%;
+    height: 80%;
+}
+
+/* Botões - Tela Inicial - Desktop-1. */
 .botao-principal{
     display: none;  
     
@@ -25,7 +40,7 @@ body{
     font-weight: 400;   
     border-radius: 24px;
     border-color: #0A3871;
-    margin-left: 40%;
+    margin-left: 45%;
     cursor: pointer;
     
 }
@@ -33,19 +48,40 @@ body{
 .bt-comecar{ 
     background: #0A3871;  
     color: #FFFFFF;
-    margin-top: 18%;  
+    margin-top: 20%;  
 }
 
 .bt-adicionar{ 
     background: #F3F5FC;   
     color: #0A3871;    
-    margin-top: 26%;
+    margin-top: 29%;
 }
 
 
-/* Botões - Tela do Jogo. */
-.botao-jogo{
-    /*display: none; */ 
+/* Botões - Tela Digite a Palavra - Desktop-2. */
+.botao-palavra{
+    display: none;  
+}
+
+.palavra::placeholder{
+    color: #0A3871;
+}
+
+.palavra{
+    position: absolute;
+    display: inline;
+    color: #0A3871;
+    background: transparent;    
+    resize: none;
+    border: none;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 32px;     
+    left: 440px;
+    top: 168px;
+    outline: none;    
+    visibility: hidden; /* Para ocutar o textarea. */
 }
 
 .simbolo{
@@ -63,7 +99,7 @@ body{
     font-weight: 700;
     font-size: 0.8em; 
     margin-left: 0.3%;   
-    margin-top: 566px;   
+    margin-top: 623px;   
 }
 
 .bt-salvar, .bt-cancelar{
@@ -75,11 +111,10 @@ body{
     font-family: 'Inter', sans-serif;
     font-weight: 400;   
     font-size: 16px;    
-    margin-top: 35%;
+    margin-top: 45.4%;
     border-radius: 24px;
     border-color: #0A3871;
-    cursor: pointer;
-    
+    cursor: pointer;    
 }
 
 .bt-salvar{ 
@@ -95,18 +130,45 @@ body{
     
 }
 
-/* Rodapé. */
-footer{    
-    text-align: center;   
-    padding: 20px 0;    
+/* Tela do Jogo - Desktop-3 e Desktop-4.*/
+.jogo{
+    display: none;
+}
+.bt-novo, .bt-desisti{
+    display: inline-block;       
+    width: 332px;
+    height: 67px;
+    align-items: center;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-weight: 400;   
+    font-size: 16px;    
+    margin-top: 45.4%;
+    border-radius: 24px;
+    border-color: #0A3871;
+    cursor: pointer;    
+}
+
+.bt-novo{ 
+    background: #0A3871;  
+    color: #FFFFFF;   
+    margin-left: 35%;
+}
+
+.bt-desisti{ 
+    background: #F3F5FC;   
+    color: #0A3871;
+    margin-left: 1.5%;
+    
 }
 
 .copyright{  
+    position: relative;  
     font-family: 'Lobster', serif; 
     font-weight: 400;    
-    position: relative;
-    color: #0A3871;
+    text-align: right;
     font-size: 0.8em;
-    margin: 5% 0;
+    padding-left: 10%;
+    color: #0A3871;
+    margin-right: 0.5%;
 }
-

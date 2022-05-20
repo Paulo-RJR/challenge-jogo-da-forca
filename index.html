@@ -5,32 +5,36 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Jogo da Forca</title>
-        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link rel="stylesheet" href="css/index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">       
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">         
         <link rel="stylesheet" href="css/reset.css">
+        <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
-        <header>
+        <header id="cabeca">
             <img src="img/ltr-a.png" alt="Letra minúscula." class="letra-a">
         </header>
-        <main>
+        <main id="corpo">
             <section class="botao-principal">
                 <button class="bt-comecar">Começar a jogar</button>
                 <button class="bt-adicionar">Adicionar nova palavra</button>
+            </section>            
+            <section>
+                <textarea cols="43" rows="6" placeholder="Digite uma palavra ou frase" class="palavra"></textarea>                
             </section>
-            <!--<section class="informar">
-            </section>-->
-            <section class="botao-jogo">
+            <section class="botao-palavra">
                 <img src="img/simbolo.png" class="simbolo">
                 <p class="dica">Máx. 8 letras.</p>                
                 <button class="bt-salvar">Salvar e começar</button>
                 <button class="bt-cancelar">Cancelar</button>
             </section>
+
+            <section class="jogo">
+                <button class="bt-novo">Novo Jogo</button>
+                <button class="bt-desisti">desistir</button>
+            </section>
         </main>
-        <footer>
+        <footer id="rodape">
             <p class="copyright">&copy; - Paulo Roberto J. Rodrigues.</p>
         </footer>    
     </body>
