@@ -1,4 +1,4 @@
-# Challenges - ONE - Jogo da Foca:
+# Challenges - ONE - Jogo da Forca:
 
 Este repositório foi criado para demonstrar e compartilhar a resolução do desafio 2 (Jogo da forca) do programa ONE - Oracle Next Education em parceiria com a plataforma de cursos digitais Alura.
 Também é importante resaltar que este repositório além dos objetivos de criação citados acima serve para demonstrar que possuo as Softs Skills necessárias para ser contratado pela Oracle ou por uma de suas empresas parceiras.<br>
