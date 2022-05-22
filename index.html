@@ -12,7 +12,7 @@
     </head>
     <body>
         <header id="cabeca">
-            <img src="img/ltr-a.png" alt="Letra minúscula." class="letra-a">
+            <img src="img/ltr-a.png" alt="Letra - a - minúscula." class="letra-a">
         </header>
         <main id="corpo">
             <section class="botao-principal">
@@ -28,14 +28,17 @@
                 <button class="bt-salvar">Salvar e começar</button>
                 <button class="bt-cancelar">Cancelar</button>
             </section>
-
+            
             <section class="jogo">
+                <canvas width="294" height="360" class="tabuleiro"></canvas>
+                <canvas width="464" height="152" class="letras"></canvas>                 
                 <button class="bt-novo">Novo Jogo</button>
-                <button class="bt-desisti">desistir</button>
+                <button class="bt-desisti">desistir</button>               
             </section>
         </main>
         <footer id="rodape">
             <p class="copyright">&copy; - Paulo Roberto J. Rodrigues.</p>
-        </footer>    
+        </footer>
+        <script src="js/inicial.js"></script>    
     </body>
 </html>
