@@ -1,5 +1,7 @@
 var tela = document.querySelector("canvas");
 var pincel = tela.getContext("2d");
+var tela2 = document.querySelector(".letras");
+var pincel2 = tela2.getContext("2d");
 
 // Desenhar as linhas para montar a forca.
 function desenhaForca() {
@@ -48,6 +50,12 @@ function pernaDireita(){
     pincel.fillRect(280, 208, 4.5, 70); // Braço.    
 }
 
+function indicaLetra(){
+    pincel2.fillStyle = "#0A3871";
+    pincel2.fillRect(20, 90, 80, 4);
+    
+}
+
 desenhaForca();
 desenhaCabeca();
 bracoEsquerdo();
@@ -55,3 +63,4 @@ bracoDireito();
 desenhaCorpo(); 
 pernaEsquerda();
 pernaDireita();
+indicaLetra();
