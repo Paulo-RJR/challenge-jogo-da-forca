@@ -134,10 +134,10 @@ body{
 
 .tabuleiro{    
     position: absolute;
-    background: #FFFFFF;
+    background: #F3F5FC;
     margin: 0 50%;
     align-items: center;
-    border: #495057 solid 2px;    
+    /*border: #495057 solid 2px;  Usada para ver os testes. */   
 }
 
 .letras{    
