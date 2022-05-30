@@ -5,7 +5,7 @@ var pincel2 = tela2.getContext("2d");
 
 // Desenhar as linhas para montar a forca.
 function desenhaForca() {
-    pincel.fillStyle= "#0A3871";
+    pincel.fillStyle= "#8B4513";
     pincel.fillRect(258, 0, 4.5, 48);    
     pincel.fillRect(82, 0, 177.75, 4.5);    
     pincel.fillRect(80, 0, 4.5, 360);    
@@ -22,16 +22,16 @@ function desenhaCabeca(){
     pincel.fill('evenodd'); // Para retirar a cor de fundo do circulo.    
 }
 
-/* Desenhar uma linha para o braço esquerdo. */
+// Desenhar uma linha para o braço esquerdo.
 function bracoEsquerdo(){    
     pincel.fillRect(240, 130, 20, 4.5); // Ombro.
     pincel.fillRect(240, 130, 4.5, 50); // Braço.    
 }
 
-/* Desenhar uma linha para o braço direito.*/ 
+// Desenhar uma linha para o braço direito. 
 function bracoDireito(){     
     pincel.fillRect(260, 130, 20, 4.5); // Ombro.
-    pincel.fillRect(280, 130, 4.5, 50); // Braço.    
+    pincel.fillRect(280, 130, 4.5, 50); // Braço.*/       
 }
 
 // Desenhar uma linha para ser o corpo do boneco.
@@ -44,7 +44,7 @@ function pernaEsquerda(){
     pincel.fillRect(240, 208, 4.5, 70); // Braço.    	
 }
 
-/* Desenhar uma linha para o braço direito.*/ 
+// Desenhar uma linha para o braço direito. 
 function pernaDireita(){     
     pincel.fillRect(260, 208, 20, 4.5); // Ombro.
     pincel.fillRect(280, 208, 4.5, 70); // Braço.    

@@ -57,7 +57,7 @@ body{
 
 /* Botões - Tela Digite a Palavra - Desktop-2. */
 .botao-palavra{
-    display: none;  
+    display: none; 
 }
 
 .palavra::placeholder{

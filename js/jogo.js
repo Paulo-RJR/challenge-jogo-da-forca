@@ -18,19 +18,26 @@ digitar.focus();
 function existePalavra(){
     if(digitar.value !== ""){
         var toda = digitar.value.toUpperCase();
-        palavraSecreta.push(toda);
-        
+        palavraSecreta.push(toda);        
         console.log(palavraSecreta);
+        console.log(escolhePalavra());        
         limpaPalavra();
     }            
 }
 
-/* Limpa o texto digitado e coloca o ponto de inserção para digitar novamente. */
+// Limpa o texto digitado e coloca o ponto de inserção para digitar novamente. 
 function limpaPalavra(){
     digitar.value = "";
     digitar.focus();
 }
 
-/* Eventos de clicar nos botões. */
+// Para gerar uma palavra nova (que estja no /array), toda vez que o jogo for iniciado.
+function escolhePalavra(){
+   var letra = palavraSecreta[Math.floor(Math.random() * palavraSecreta.length)];
+   console.log(palavraSecreta);
+   console.log(letra); 
+}
+
+// Eventos de clicar nos botões. 
 salvar.addEventListener("click", existePalavra);
 cancelar.addEventListener("click", limpaPalavra);
