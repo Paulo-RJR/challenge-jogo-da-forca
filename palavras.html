@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jogo da Forca</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">       
+        <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+        <link rel="icon" href="img/letraa.ico" type="image/x-icon">         
+        <link rel="stylesheet"  type="text/css" href="css/reset.css">
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+    </head>
+    <body>
+        <header id="cabeca-2">
+            <img src="img/ltr-a.png" alt="Letra - a - minúscula." class="letra-a">
+        </header>
+        <main id="corpo-2">            
+            <!-- Tela Digite a Palavra - Figma (Desktop-2). -->
+            <section>
+                <!--<textarea cols="43" rows="6" placeholder="Digite uma palavra ou frase" class="palavra"></textarea>-->                                
+                <textarea cols="28" rows="1" name="palavra" placeholder="Digite uma palavra ou frase" class="palavra"></textarea>
+                <p class="palavra-incorreta"></p>
+            </section>
+            <section class="botao-palavra">
+                <img src="img/simbolo.png" class="simbolo">
+                <p class="dica">Máx. 8 letras.</p> 
+                <button class="bt-salvar">Salvar e começar</button>
+                <button class="bt-cancelar">Cancelar</button>               
+            </section>         
+        </main>
+        <footer id="rodape-2">
+            <p class="copyright">&copy; - Paulo Roberto J. Rodrigues.</p>
+        </footer>        
+        <script src="js/adicionar.js"></script>
+        
+    </body>
+</html>

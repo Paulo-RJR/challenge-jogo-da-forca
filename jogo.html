@@ -12,20 +12,22 @@
         <link rel="stylesheet" type="text/css" href="css/index.css">
     </head>
     <body>
-        <header id="cabeca">
+        <header id="cabeca-3">
             <img src="img/ltr-a.png" alt="Letra - a - minúscula." class="letra-a">
         </header>
-        <main id="corpo">
-            
-            <!-- Tela Inicial - Figma (Desktop-1). -->
-            <section class="botao-principal">
-                <button class="bt-comecar">Começar a jogar</button>
-                <button class="bt-adicionar">Adicionar nova palavra</button>
-            </section>            
+        <main id="corpo-3">         
+            <!-- Tela do Jogo - Figma (Desktop-3 e Desktop-4). -->
+            <section class="jogo">
+                <canvas width="464" height="700" class="tabuleiro"></canvas>                                       
+                <button class="bt-novo"><a href="jogo.html">Novo Jogo</a></button>
+                <button class="bt-desisti">Desistir</button>
+            </section>        
         </main>
-        <footer id="rodape">
+        <footer id="rodape-3">
             <p class="copyright">&copy; - Paulo Roberto J. Rodrigues.</p>
-        </footer>  
-        <script src="js/inicial.js"></script>                
+        </footer>
+        <script src="js/tabuleiro.js"></script>
+        <script src="js/jogo.js"></script> 
+    </script>    
     </body>
 </html>
