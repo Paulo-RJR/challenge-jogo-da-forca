@@ -53,8 +53,7 @@ document.onkeydown = (e) => {
             adicionarLetraCorreta(palavraSecreta.indexOf(letra));
             for(let i = 0; i < palavraSecreta.length; i++){
                 if(palavraSecreta[i] === letra){
-                    letraCorreta(i); 
-                    vencerJogo();                                                                                                             
+                    letraCorreta(i);                                                                                                                                
                 }
             }
         }else{
