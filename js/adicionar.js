@@ -21,16 +21,14 @@ salvar.addEventListener("click", () => {
             setTimeout(() => {
                 incorreta.textContent = "";                    
             }, 6000);                
-        }
-        
+        }        
     }
     if(correta){
         window.onbeforeunload = function(){
             sessionStorage.setItem(digitar[0], digitar[1]);
         }
         window.open("jogo.html", "_self");
-    }   
-
+    }
 });
 
 // Serve para aceitar apaenas as latras do teclado

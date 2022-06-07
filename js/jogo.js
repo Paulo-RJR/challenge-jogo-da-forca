@@ -13,10 +13,12 @@ desistir.addEventListener("click", () => {
 
 // Para gerar uma palavra nova (que estja no /array), toda vez que o jogo for iniciado.
 function sorteiaPalavraSecreta(){
-   var palavra = palavras[Math.floor(Math.random() * palavras.length)];
+   var palavra = palavras[Math.floor(Math.random() * palavras.length)];   
    palavraSecreta = palavra;
-   console.log(palavras);     
-   console.log(palavra);
+
+   // Para visualizar resultado no console do browser.
+   //console.log(palavras);     
+   //console.log(palavra);
    return palavra;
 }
 
@@ -35,7 +37,7 @@ function verificarLetraCorreta(key){
 }
 
 function adicionarLetraCorreta(i){
-    palavraCorreta += palavraSecreta[i].toUpperCase();        
+    palavraCorreta += palavraSecreta[i].toUpperCase();           
 }
 
 function adicionarLetraIncorreta(letter){
@@ -51,7 +53,8 @@ document.onkeydown = (e) => {
             adicionarLetraCorreta(palavraSecreta.indexOf(letra));
             for(let i = 0; i < palavraSecreta.length; i++){
                 if(palavraSecreta[i] === letra){
-                    letraCorreta(i);                                                                       
+                    letraCorreta(i); 
+                    vencerJogo();                                                                                                             
                 }
             }
         }else{
@@ -59,11 +62,12 @@ document.onkeydown = (e) => {
                 return
                 adicionarLetraIncorreta(letra);
                 letraErrada(letra, erros);
-                perderJogo();                
+                perderJogo();                              
         }   
     }
-};     
-    
+};
+
+// Condições caso o jogador    
 function perderJogo(){      
     if(erros == 9){
         desenharBaseForca();
@@ -93,41 +97,9 @@ function perderJogo(){
         pernaDireita();  
         jogadorPerde();
         desabilitarTeclado();
-    }
+    }    
 } 
 
 function desabilitarTeclado(){
     document.onkeydown = letraCorreta;  
 }
-
-// Estou quase resolvendo - 05/05/2022//.
-/*function vencerJogo(){
-    //if(palavraSecreta != letraErrada.length && letras.length != ""){
-    //if(palavraCorreta === letraCorreta.length){
-    //if(letraCorreta.length == true && letraCorreta.length === palavraCorreta.length){
-    
-    if(palavraSecreta.length === letras.length){
-        jogadorVence();
-        desabilitarTeclado();
-    }
-}  */
-
-// Função para adicionar novas palavras ao jogo - não funciona.
-/*function adicionarPalavra(){
-    if(!digitar == ""){
-        var toda = digitar.value.toUpperCase();
-        palavras.push(toda);        
-        //console.log(palavraSecreta);
-        //console.log(adicionarPalavra());        
-        limpaPalavra();
-    }else {
-        limpaPalavra();
-        alert("Digite uma palavra válida");       
-    }   
-}*/   
-
-// Limpa o texto digitado e coloca o ponto de inserção para digitar novamente. 
-/*function limpaPalavra(){
-    digitar.value = "";
-    digitar.focus();
-}  */

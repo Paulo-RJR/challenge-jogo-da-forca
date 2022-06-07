@@ -6,7 +6,7 @@ body{
 }
 
 /* Cabeçalho e Rodapé (Extra). */
-#cabeca, #cabeca-2, #cabeca-3, #rodape, #rodape-2, #rodape-3{    
+#cabeca, #rodape{    
     width: 117.3%;
     height: 10%;
 }

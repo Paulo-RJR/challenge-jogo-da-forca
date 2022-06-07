@@ -120,4 +120,5 @@ function jogadorPerde(){
     pincel.fill();
 }
 
+// Para mostrar o chão no canvas.
 desenharChao();
