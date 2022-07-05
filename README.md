@@ -23,13 +23,13 @@ Desenvolva um site contendo o tradicional Jogo da forca utilizando o HTML5, CSS3
 - Se completar a palavra correta antes de acabarem as tentativas, deve ser exibida na tela a mensagem "Você Venceu. Parabéns!";
 - A página deve ter os traços indicando cada letra da palavra, separados por espaço;
 - A página deve ter um botão de "Iniciar Jogo" para começar o jogo;
-- Só deve ser possívél escrever letras (os números não serão válidos)
+- Só deve ser possível escrever letras (os números não serão válidos)
 - As letras erradas devem aparecer na tela, mas não podem aparecer repetidamente;
 - As letras corretas devem ser mostradas na tela acima dos traços, nas posições corretas em relação à palavra.<br>
 
 Com auxilio das seguintes ferramentas:
-Trello: um site com cards montados pela Alura para acompanhamento e organização das fazes de criação do decodificador de textos de forma Ágil;
-Figma: um site para visualizar e utilizar o Design do HTML e CSS do site do decodificador de textos proposto pela Alura.
+Trello: um site com cards montados pela Alura para acompanhamento e organização das fazes de criação do Jogo da Forca de forma Ágil;
+Figma: um site para visualizar e utilizar o Design do HTML e CSS do site do Jogo da Forca proposto pela Alura.
 
 <strong>Obs.:</strong> Para utilização dos itens criados pela Alura nos sites Figma e Trello é necessária criar uma conta nestes sites.<br>
 
